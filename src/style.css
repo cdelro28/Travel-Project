@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1512px;
   margin: 0 auto;
 }
 
@@ -12,12 +12,13 @@ header {
       rgba(39, 32, 68, 0.4),
       rgba(39, 32, 68, 0.8)
     ),
-    url("../images/southernmost-point-hero-bg.jpg");
+    url("../images/kw-beach.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   text-align: center;
   color: #fff;
-  padding: 260px 0;
+  padding: 200px 0;
 }
 
 header h1 {
@@ -61,7 +62,51 @@ header a {
   margin-top: 32px;
 }
 
-@media (max-width: 900px) {
+footer {
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.7),
+      rgba(39, 32, 68, 0.7)
+    ),
+    url("../images/kw-mallory-square.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 30px;
+  padding: 40px 80px;
+}
+
+footer h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+footer p,
+a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.6;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 960px) {
   header {
     padding: 65px 0;
   }
@@ -71,6 +116,7 @@ header a {
     padding: 0 24px;
     margin: 24px 0;
   }
+
   header h2 {
     font-size: 20px;
   }
@@ -78,6 +124,7 @@ header a {
   header h3 {
     font-size: 14px;
   }
+
   header a {
     font-size: 14px;
     padding: 8px 16px;
