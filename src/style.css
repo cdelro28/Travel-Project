@@ -1,5 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
+  color: #272044;
 }
 
 header {
@@ -53,11 +54,6 @@ header a {
   margin-top: 32px;
 }
 
-main section {
-  margin: 100px auto;
-  max-width: 1170px;
-}
-
 main h2 {
   font-size: 40px;
   font-weight: 700;
@@ -76,11 +72,34 @@ main h5 {
   margin: 0;
 }
 
+main h6 {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+}
+
 main p {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   opacity: 0.7;
+}
+
+main a {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 16px 32px;
+  background-color: #462cb2;
+  color: #fff;
+}
+
+section {
+  padding: 100px;
 }
 
 footer {
@@ -101,8 +120,7 @@ footer h4 {
   line-height: 1.5;
 }
 
-footer p,
-a {
+footer p {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -116,8 +134,11 @@ footer ul {
 }
 
 footer a {
-  text-decoration: none;
   color: #fff;
+}
+
+footer li a {
+  opacity: 0.6;
 }
 
 footer section {
@@ -125,7 +146,7 @@ footer section {
 }
 
 .container {
-  max-width: 1512px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -151,6 +172,33 @@ footer section {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.grid-3-col {
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 50px;
+}
+
+.secondary {
+  background-color: #f8f8f8;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 20px 20px 40px 0px #c6c6c633;
+}
+
+.card-body {
+  padding: 0 30px;
+}
+
+.card-footer {
+  padding: 30px;
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
 @media (max-width: 960px) {
   header {
     padding: 65px 0;
@@ -170,10 +218,10 @@ footer section {
     font-size: 14px;
   }
 
-  header a {
+  headera {
     font-size: 14px;
     padding: 8px 16px;
-    margin-top: 24px;
+    margin: 30px;
   }
 
   main h2 {
@@ -199,7 +247,17 @@ footer section {
     grid-template-columns: 1fr;
   }
 
+  .grid-3-col {
+    grid-template-columns: 1fr;
+  }
+
   .responsive-padding {
     padding: 20px;
+  }
+}
+
+@media (max-width: 1100px) {
+  main section .grid-3-col {
+    grid-template-columns: 1fr;
   }
 }
