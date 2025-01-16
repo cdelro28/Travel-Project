@@ -15,7 +15,7 @@
   </head>
   <body>
     <div class="container">
-      <header>
+      <header class="responsive-padding">
         <h3>.travel.</h3>
         <h1>Welcome to Key<span class="word-pair">|</span>West</h1>
         <h2>Florida's Southernmost Point</h2>
@@ -23,30 +23,34 @@
       </header>
 
       <main>
-        <img
-          src="./images/kw-duval-sloppy-joes-bar-bikes.jpg"
-          alt="Sloppy Joe's, Famous Key West Bar"
-        />
-        <div>
-          <h5>Why Key West?</h5>
-          <h2>Key West, experience the vibrant lifestyle</h2>
-          <p>
-            Key West, Florida is a quirky, vibrant little island that feels
-            worlds away, famed for its sunsets, turquoise waters, and the
-            vibrant lifestye.
-          </p>
-          <p>
-            Located at the very end of the picturesque Florida Keys archipelago,
-            Key West is close to Cuba and the Bahamas, giving it that Caribbean
-            flair without leaving the US. And although it's famed as the home of
-            key lime pie, this destination offers much more, from high end art
-            galleries to literary festivals and cool bars.
-          </p>
-        </div>
+        <section class="grid grid-2-col responsive-padding">
+          <img
+            src="./images/kw-duval-sloppy-joes-bar-bikes.jpg"
+            alt="Sloppy Joe's, Famous Key West Bar"
+            class="img-responsive"
+          />
+          <div>
+            <h5>Why Key West?</h5>
+            <h2>Key West, experience the vibrant lifestyle</h2>
+            <p>
+              Key West, Florida is a quirky, vibrant little island that feels
+              worlds away, famed for its sunsets, turquoise waters, and the
+              vibrant lifestye.
+            </p>
+            <p>
+              Located at the very end of the picturesque Florida Keys
+              archipelago, Key West is close to Cuba and the Bahamas, giving it
+              that Caribbean flair without leaving the US. And although it's
+              famed as the home of key lime pie, this destination offers much
+              more, from high end art galleries to literary festivals and cool
+              bars.
+            </p>
+          </div>
+        </section>
       </main>
 
       <footer>
-        <div class="grid">
+        <section class="grid grid-3-col-1fr-2fr-2fr responsive-padding">
           <div>
             <h4>More about Key West</h4>
             <ul>
@@ -99,7 +103,7 @@
               </a>
             </p>
           </div>
-        </div>
+        </section>
       </footer>
     </div>
   </body>
