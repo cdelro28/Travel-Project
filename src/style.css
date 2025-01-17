@@ -215,12 +215,6 @@ footer section {
   text-align: center;
 }
 
-.instagram-embed {
-  max-width: 100%;
-  display: block;
-  margin: 0 auto;
-}
-
 @media (max-width: 960px) {
   header {
     padding: 65px 0;
