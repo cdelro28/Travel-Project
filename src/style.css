@@ -215,6 +215,10 @@ footer section {
   text-align: center;
 }
 
+.transparent {
+  background-color: transparent;
+}
+
 @media (max-width: 960px) {
   header {
     padding: 65px 0;
@@ -278,10 +282,24 @@ footer section {
   .embed {
     aspect-ratio: 21/9;
   }
+
+  .instagram-embeds {
+    padding: 20px 0 0;
+  }
 }
 
 @media (max-width: 1100px) {
   main section .grid-3-col {
     grid-template-columns: 1fr;
+  }
+
+  .instagram-embeds {
+    padding: 20px 0 0;
+  }
+
+  .padding-zero {
+    padding: 20px 0;
+    margin: 0 auto;
+    display: block;
   }
 }
