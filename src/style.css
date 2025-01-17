@@ -156,6 +156,7 @@ footer section {
 
 .img-responsive {
   max-width: 100%;
+  display: block;
   margin: 0 auto;
 }
 
@@ -196,6 +197,11 @@ footer section {
   grid-gap: 0;
 }
 
+.card-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
 .card-body {
   padding: 0 30px;
 }
@@ -207,6 +213,12 @@ footer section {
 
 .text-center {
   text-align: center;
+}
+
+.instagram-embed {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 @media (max-width: 960px) {
@@ -263,6 +275,14 @@ footer section {
 
   .responsive-padding {
     padding: 20px;
+  }
+
+  .card-img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 21/9;
   }
 }
 
