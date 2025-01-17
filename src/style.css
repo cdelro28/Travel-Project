@@ -293,13 +293,10 @@ footer section {
     grid-template-columns: 1fr;
   }
 
+  footer section {
+    padding: 20px;
+  }
   .instagram-embeds {
     padding: 20px 0 0;
-  }
-
-  .padding-zero {
-    padding: 20px 0;
-    margin: 0 auto;
-    display: block;
   }
 }
